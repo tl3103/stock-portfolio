@@ -23,4 +23,4 @@ def test_not_enough_arguments_to_but():
     except TypeError:
         pass
     else:
-        assert False
+        assert False, 'We didt get an exception!'

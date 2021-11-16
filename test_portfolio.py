@@ -1,4 +1,5 @@
 # test_portfolio.py
+import pytest
 from portfolio import Portfolio
 
 def test_empty_portfolio():
@@ -18,9 +19,15 @@ def test_buy_two_stocks():
 
 def test_not_enough_arguments_to_but():
     p = Portfolio()
-    try:
+    with pytest.raises(TypeError):
         p.buy('IBM')
-    except TypeError:
-        pass
-    else:
-        assert False, 'We didt get an exception!'
+
+
+
+
+    #try:
+     #   p.buy('IBM')
+    #except TypeError:
+       # pass
+   # else:
+        #assert False, 'We didt get an exception!'

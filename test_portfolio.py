@@ -20,8 +20,8 @@ def test_buy_two_stocks():
 def test_not_enough_arguments_to_but():
     p = Portfolio()
     with pytest.raises(TypeError):
-        pass
-        #p.buy('IBM')
+        #pass
+        p.buy('IBM', price = 100)
 
 
 

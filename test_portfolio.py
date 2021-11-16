@@ -18,4 +18,9 @@ def test_buy_two_stocks():
 
 def test_not_enough_arguments_to_but():
     p = Portfolio()
-    p.buy('IBM')
+    try:
+        p.buy('IBM')
+    except TypeError:
+        pass
+    else:
+        assert False

@@ -18,7 +18,7 @@ Commit this file to your repository and push it to GitHub using GitHub Desktop, 
 
 class Portfolio:
     def __init__(self):
-        self._stocks = []
+        self._stocks = [] #make it private
     def buy(self, name, shares, price):
         self._stocks.append((name, shares, price))
     def cost(self):
